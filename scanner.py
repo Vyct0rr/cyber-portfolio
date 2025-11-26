@@ -1,6 +1,6 @@
 # -----------------------------------------------------------
 # Project: Basic Port Scanner
-# Author: [Your Name Here]
+# Author: Victor Meseko (Vyct0rr)
 # Description: Checks if common ports are open on a target.
 # -----------------------------------------------------------
 
@@ -22,8 +22,7 @@ print("-" * 50)
 
 # 4. The Scanning Loop
 try:
-    # We will scan ports 1 to 1024 (the most common ports)
-    # For a quick test, you can change 1025 to 85
+    # We will scan ports 1 to 85 (the most common ports)
     for port in range(1, 85): 
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         socket.setdefaulttimeout(1) # Wait 1 second max for a response
@@ -50,4 +49,4 @@ except socket.error:
     sys.exit()
 
 print("-" * 50)
-print("Scan completed.")
+print("Scan completed!")
