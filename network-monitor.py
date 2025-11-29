@@ -7,9 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 
-# ==========================================
-# CONFIGURATION SECTION (EDIT THESE VALUES)
-# ==========================================
+# CONFIGURATION SECTION
 
 # List of IP addresses or Hostnames to monitor
 MONITORED_HOSTS = [
@@ -30,9 +28,7 @@ RECEIVER_EMAIL = "mesekooluwajuwon@gmail.com"
 # How often to check the hosts (in seconds)
 CHECK_INTERVAL = 60 
 
-# ==========================================
 # SETUP LOGGING
-# ==========================================
 # This creates a file named 'monitor.log' to record history
 logging.basicConfig(
     filename='monitor.log',
