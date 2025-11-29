@@ -1,8 +1,5 @@
-# -----------------------------------------------------------
-# Project: Basic Port Scanner
-# Author: Victor Meseko (Vyct0rr)
-# Description: Checks if common ports are open on a target.
-# -----------------------------------------------------------
+ # Project: Basic Port Scanner
+ # Author: Victor Meseko (Vyct0rr)
 
 import socket # Import the library that lets us talk to the network
 import sys    # Import library to handle system commands
