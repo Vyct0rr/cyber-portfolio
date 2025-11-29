@@ -1,15 +1,20 @@
- # Project: Basic Port Scanner
- # Author: Victor Meseko (Vyct0rr)
+# Project: Basic Port Scanner (Verbose Mode)
+# Author: Vyct0rr
+# Description: Checks ports and prints status for EVERY attempt.
 
-import socket # Import the library that lets us talk to the network
-import sys    # Import library to handle system commands
-from datetime import datetime # Import library to track time
+import socket
+import sys
+from datetime import datetime
 
-# 1. Ask the user for the target to scan
-target = input("Enter the IP address or website to scan (e.g., google.com): ")
+# 1. Ask the user for the target
+target = input("Enter the IP address to scan (e.g., 127.0.0.1): ")
 
-# 2. Translate hostname to IP (e.g., google.com -> 142.250.x.x)
-target_ip = socket.gethostbyname(target)
+# 2. Translate hostname to IP
+try:
+    target_ip = socket.gethostbyname(target)
+except socket.gaierror:
+    print("Hostname could not be resolved.")
+    sys.exit()
 
 # 3. Print a nice banner
 print("-" * 50)
@@ -19,26 +24,28 @@ print("-" * 50)
 
 # 4. The Scanning Loop
 try:
-    # We will scan ports 1 to 85 (the most common ports)
-    for port in range(1, 85): 
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        socket.setdefaulttimeout(1) # Wait 1 second max for a response
+    # We are scanning from port 7990 to 8005 to test your python server.
+    # You can change this back to range(1, 85) later if you want.
+    for port in range(7990, 8005): 
         
-        # Attempt to connect to the port
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        socket.setdefaulttimeout(0.5) # Wait 0.5 seconds max
+        
+        # Print "Checking..." without moving to a new line yet
+        print(f"Checking Port {port}...", end=" ") 
+        
+        # Attempt to connect
         result = s.connect_ex((target_ip, port))
         
-        # If result is 0, the port is OPEN
         if result == 0:
-            print(f"Port {port}: OPEN")
+            print("OPEN! ✅") # Success message
+        else:
+            print("Closed")   # Failure message
         
-        s.close() # Close connection and move to the next
+        s.close() # Close connection
 
 except KeyboardInterrupt:
     print("\nExiting Program.")
-    sys.exit()
-
-except socket.gaierror:
-    print("Hostname could not be resolved.")
     sys.exit()
 
 except socket.error:
@@ -46,4 +53,4 @@ except socket.error:
     sys.exit()
 
 print("-" * 50)
-print("Scan completed!")
+print("Scan completed.")
