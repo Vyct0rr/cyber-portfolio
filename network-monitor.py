@@ -21,9 +21,9 @@ MONITORED_HOSTS = [
 # Enable 2FA on Google, then go to Account > Security > App Passwords.
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-SENDER_EMAIL = "mesekooluwajuwon@gmail.com"
-SENDER_PASSWORD = "jgkpgskxjitvxzjr"
-RECEIVER_EMAIL = "mesekooluwajuwon@gmail.com"
+SENDER_EMAIL = ""
+SENDER_PASSWORD = ""
+RECEIVER_EMAIL = ""
 
 # How often to check the hosts (in seconds)
 CHECK_INTERVAL = 60 
