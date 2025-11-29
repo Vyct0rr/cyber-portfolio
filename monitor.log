@@ -1,0 +1,32 @@
+2025-11-29 17:02:57,389 - INFO - Initial check: 8.8.8.8 is offline
+2025-11-29 17:02:58,310 - INFO - Initial check: 192.168.1.1 is offline
+2025-11-29 17:02:59,505 - INFO - Initial check: example.com is online
+2025-11-29 17:03:54,845 - INFO - Network Monitor stopped by user.
+2025-11-29 17:11:03,310 - INFO - Initial check: 8.8.8.8 is offline
+2025-11-29 17:11:04,324 - INFO - Initial check: 192.168.1.1 is offline
+2025-11-29 17:11:05,811 - INFO - Initial check: amazon.com is offline
+2025-11-29 17:12:06,199 - WARNING - Status Change: 8.8.8.8 went from offline to online
+2025-11-29 17:12:17,894 - INFO - Email alert sent for 8.8.8.8 (online)
+2025-11-29 17:14:43,196 - INFO - Network Monitor stopped by user.
+2025-11-29 17:20:45,648 - INFO - Initial check: 8.8.8.8 is online
+2025-11-29 17:20:46,327 - INFO - Initial check: 192.168.1.1 is offline
+2025-11-29 17:20:47,328 - INFO - Initial check: example.com is offline
+2025-11-29 17:21:49,079 - WARNING - Status Change: example.com went from offline to online
+2025-11-29 17:21:54,577 - ERROR - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-78ad10463e0sm27124387b3.54 - gsmtp')
+2025-11-29 17:22:56,822 - WARNING - Status Change: example.com went from online to offline
+2025-11-29 17:23:03,976 - ERROR - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-78ad10292ebsm27064697b3.42 - gsmtp')
+2025-11-29 17:24:06,176 - WARNING - Status Change: example.com went from offline to online
+2025-11-29 17:24:12,256 - ERROR - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-78ad0d82295sm27103367b3.25 - gsmtp')
+2025-11-29 17:26:14,818 - WARNING - Status Change: 8.8.8.8 went from online to offline
+2025-11-29 17:26:21,979 - ERROR - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 956f58d0204a3-6433c44336bsm2708015d50.14 - gsmtp')
+2025-11-29 17:26:23,817 - WARNING - Status Change: example.com went from online to offline
+2025-11-29 17:26:34,607 - ERROR - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-78ad100d343sm27258877b3.35 - gsmtp')
+2025-11-29 17:26:46,629 - INFO - Network Monitor stopped by user.
+2025-11-29 17:27:04,687 - INFO - Initial check: 8.8.8.8 is online
+2025-11-29 17:27:05,315 - INFO - Initial check: 192.168.1.1 is offline
+2025-11-29 17:27:05,971 - INFO - Initial check: example.com is online
+2025-11-29 17:29:08,881 - WARNING - Status Change: 8.8.8.8 went from online to offline
+2025-11-29 17:29:17,265 - INFO - Email alert sent for 8.8.8.8 (offline)
+2025-11-29 17:30:19,588 - WARNING - Status Change: 8.8.8.8 went from offline to online
+2025-11-29 17:30:27,766 - INFO - Email alert sent for 8.8.8.8 (online)
+2025-11-29 17:30:51,959 - INFO - Network Monitor stopped by user.
